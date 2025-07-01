@@ -3,7 +3,6 @@
 import { useSearchParams } from "next/navigation";
 import HeadingDescription from "./HeadingDescription";
 import { useState } from "react";
-import { useLogo } from "@/context/LogoContext";
 
 const LogoTitle = ({ onHandleInputChange }) => {
   const logoTitle = "Logo Title";
@@ -11,7 +10,6 @@ const LogoTitle = ({ onHandleInputChange }) => {
     "Add your Business, App or Website name for a Custom Logo";
 
   const searchParams = useSearchParams();
-  const { formData, onHandleInputChange } = useLogo();
 
   const [title, setTitle] = useState(searchParams?.get("title") ?? "");
 

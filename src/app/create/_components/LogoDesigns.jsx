@@ -5,8 +5,8 @@ import HeadingDescription from "./HeadingDescription";
 import Image from "next/image";
 import { useState } from "react";
 
-const LogoDesigns = ({ onHandleInputChange }) => {
-  const [selectedStyle, setSelectedStyle] = useState();
+const LogoDesigns = ({ onHandleInputChange, formData }) => {
+  const [selectedStyle, setSelectedStyle] = useState(formData?.design?.title);
 
   const logoDesignTitle = "Choose your logo style";
   const description =

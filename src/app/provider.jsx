@@ -1,3 +1,6 @@
+"use client";
+
+// import { LogoProvider } from "@/context/LogoContext";
 import Header from "./_components/Header";
 
 const Provider = ({ children }) => {

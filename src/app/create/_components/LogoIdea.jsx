@@ -7,7 +7,7 @@ import { Loader2 } from "lucide-react";
 const LogoIdea = ({ formData, onHandleInputChange }) => {
   const [ideas, setIdeas] = useState();
   const [loading, setLoading] = useState(false);
-  const [selectedOption, setSelectedOption] = useState();
+  const [selectedOption, setSelectedOption] = useState(formData?.idea);
 
   useEffect(() => {
     genrateLodoDesignIdea();

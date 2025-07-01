@@ -2,8 +2,8 @@ import Colors from "@/app/_components/_data/Colors";
 import HeadingDescription from "./HeadingDescription";
 import { useState } from "react";
 
-const LogoColorPalette = ({ onHandleInputChange }) => {
-  const [selectedPalette, setSelectedPalette] = useState();
+const LogoColorPalette = ({ onHandleInputChange, formData }) => {
+  const [selectedPalette, setSelectedPalette] = useState(formData?.palette);
 
   const colorPalletTitle = "Select your color palette";
   const description =
